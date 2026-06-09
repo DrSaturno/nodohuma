@@ -98,30 +98,33 @@ const QuienesSomos = () => {
 
   return (
     <div className="quienes-somos-grid animate-fade-in">
-      <div className="profile-card">
-        {/* Stylized Avatar - Can be replaced by dropping an image file 'sofia-profile.jpg' into src/assets/ */}
-        <div className="avatar-container">
+      <div className="quienes-somos-left">
+        {/* Large Premium Avatar Container - Styled to frame a photo or initial badge */}
+        <div className="avatar-image-container">
           SI
           {/* Note for deployment: To use a real photo, uncomment the img tag below and place the image in assets */}
-          {/* <img src="/src/assets/sofia-profile.jpg" alt="Sofía Ibarborde" style={{ position: 'absolute', width: '100%', height: '100%', objectFit: 'cover' }} /> */}
+          {/* <img src="/src/assets/sofia-profile.jpg" alt="Sofía Ibarborde" /> */}
         </div>
-        <h3>Sofía Ibarborde</h3>
-        <span className="profile-title">People Operations Specialist</span>
-        <p>{bio}</p>
       </div>
 
-      <div className="trajectory-accordion">
-        {history.map((item, index) => (
-          <TrajectoryItem
-            key={index}
-            company={item.company}
-            role={item.role}
-            period={item.period}
-            achievements={item.achievements}
-            isOpen={openIndex === index}
-            onClick={() => handleToggle(index)}
-          />
-        ))}
+      <div className="quienes-somos-right">
+        <h3 className="profile-name">Sofía Ibarborde</h3>
+        <span className="profile-title">People Operations Specialist</span>
+        <p className="profile-bio">{bio}</p>
+
+        <div className="trajectory-accordion">
+          {history.map((item, index) => (
+            <TrajectoryItem
+              key={index}
+              company={item.company}
+              role={item.role}
+              period={item.period}
+              achievements={item.achievements}
+              isOpen={openIndex === index}
+              onClick={() => handleToggle(index)}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
