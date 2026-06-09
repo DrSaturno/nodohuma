@@ -48,22 +48,22 @@ const Metodologia = () => {
     {
       step: 'Fase 01',
       title: 'Diagnóstico',
-      desc: 'Relevamos el estado actual del equipo, identificamos cuellos de botella en la comunicación, valoramos el clima organizativo y definimos los objetivos de negocio clave para alinear la infraestructura humana.'
+      desc: 'Entendemos la situación actual de la organización y los objetivos del negocio para sentar las bases.'
     },
     {
       step: 'Fase 02',
       title: 'Diseño',
-      desc: 'Planificamos la infraestructura a medida. Redactamos las descripciones de puestos por indicadores (JDs), estructuramos canales de comunicación, proyectamos el organigrama y modelamos la inducción (onboarding).'
+      desc: 'Definimos prioridades, estructura y procesos según las necesidades detectadas de forma personalizada.'
     },
     {
       step: 'Fase 03',
       title: 'Integración',
-      desc: 'Implementamos el ecosistema diseñado. Iniciamos búsquedas críticas de talento, ejecutamos los planes de bienvenida, estructuramos la auditoría de legajos y activamos el canal de soporte directo a los líderes.'
+      desc: 'Ponemos en marcha las acciones acordadas y acompañamos a los equipos durante la adaptación y el despegue.'
     },
     {
       step: 'Fase 04',
       title: 'Evolución',
-      desc: 'Brindamos un acompañamiento estratégico y operativo continuo. Medimos el clima laboral, ajustamos los procesos al ritmo de crecimiento del negocio y optimizamos constantemente la estructura para escalar.'
+      desc: 'Realizamos seguimiento, ajustes y mejoras para sostener el crecimiento de la organización en el tiempo.'
     }
   ];
 

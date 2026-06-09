@@ -10,7 +10,7 @@ const Header = () => {
       setIsScrolled(window.scrollY > 50);
 
       // Section tracking for active state
-      const sections = ['inicio', 'esencia', 'problema', 'ecosistema', 'metodologia', 'faq', 'contacto'];
+      const sections = ['inicio', 'esencia', 'quienes-somos', 'problema', 'ecosistema', 'metodologia', 'faq', 'contacto'];
       const scrollPosition = window.scrollY + 120;
 
       for (const sectionId of sections) {
@@ -96,6 +96,13 @@ const Header = () => {
           onClick={(e) => handleNavClick(e, 'esencia')}
         >
           Esencia
+        </a>
+        <a 
+          href="#quienes-somos" 
+          className={`nav-link ${activeSection === 'quienes-somos' ? 'active' : ''}`}
+          onClick={(e) => handleNavClick(e, 'quienes-somos')}
+        >
+          Quiénes Somos
         </a>
         <a 
           href="#problema" 

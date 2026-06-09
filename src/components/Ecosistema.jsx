@@ -7,7 +7,7 @@ const Ecosistema = () => {
     {
       id: 'talent',
       title: 'Talent Acquisition',
-      desc: 'Búsqueda especializada de perfiles administrativos y mandos medios. Identificamos el talento clave para la excelencia operativa de tu empresa.',
+      desc: 'Búsqueda y selección de perfiles administrativos, operativos y mandos medios. Relevamiento, entrevistas, presentación de candidatos y acompañamiento del proceso.',
       icon: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <circle cx="11" cy="11" r="8"></circle>
@@ -17,17 +17,17 @@ const Ecosistema = () => {
         </svg>
       ),
       deliverables: [
-        'Relevamiento profundo del perfil del puesto y del fit cultural de la organización.',
+        'Relevamiento profundo del perfil del puesto y del fit cultural.',
         'Publicación multicanal en portales especializados y base de datos propia.',
-        'Entrevistas de evaluación por competencias y validación de referencias profesionales.',
-        'Presentación de shortlist calificada con reportes individuales detallados.',
-        'Garantía de satisfacción y reemplazo de 60 días sin costo adicional.'
+        'Entrevistas de evaluación por competencias y validación de referencias.',
+        'Presentación de shortlist calificada con reportes individuales.',
+        'Garantía de reemplazo de 60 días sin costo adicional.'
       ]
     },
     {
       id: 'onboarding',
       title: 'Onboarding & Experience',
-      desc: 'Inserción técnica y experiencia de bienvenida de alto impacto para maximizar el potencial del nuevo colaborador desde el primer día.',
+      desc: 'Diseño de experiencias de ingreso que aceleran la adaptación, reducen la incertidumbre y mejoran la integración de cada incorporación.',
       icon: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
@@ -37,17 +37,17 @@ const Ecosistema = () => {
         </svg>
       ),
       deliverables: [
-        'Diseño conceptual de la bienvenida del talento (Welcome Kit y agenda del día uno).',
-        'Diseño del plan de inducción técnico y operativo para los periodos claves (30, 60 y 90 días).',
-        'Definición e inducción a la figura del tutor interno ("Buddy Program").',
-        'Establecimiento de hitos tempranos de evaluación y feedback formal a los 30 días.',
-        'Optimización del time-to-productivity reduciendo la curva de aprendizaje del puesto.'
+        'Diseño del plan de inducción técnico y operativo (30, 60 y 90 días).',
+        'Coordinación de los preparativos de ingreso con el líder.',
+        'Gestión documental completa y orden de legajo de ingreso.',
+        'Definición de tutores internos (Buddies) y seguimiento inicial.',
+        'Aceleración de la curva de aprendizaje y time-to-productivity.'
       ]
     },
     {
       id: 'operations',
       title: 'People Operations',
-      desc: 'Consultoría continua bajo modalidad de abono mensual. Asumimos la gestión operativa diaria de personas y el respaldo continuo a líderes.',
+      desc: 'Acompañamiento continuo para líderes y equipos. Gestión documental, seguimiento de clima, soporte operativo y asesoramiento permanente.',
       icon: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
@@ -57,17 +57,17 @@ const Ecosistema = () => {
         </svg>
       ),
       deliverables: [
-        'Consultoría continua y asesoramiento estratégico directo a los socios fundadores y directivos.',
-        'Auditoría completa y estandarización del control de legajos físicos/digitales.',
-        'Mitigación y prevención de riesgos legales y laborales en la gestión de personas.',
-        'Monitoreo preventivo del clima laboral a través de encuestas rápidas de satisfacción (pulse surveys).',
-        'Resolución diaria y centralizada de novedades operativas (incidencias, licencias, vacaciones).'
+        'Soporte diario y centralizado ante novedades operativas de personal.',
+        'Monitoreo preventivo del clima laboral del equipo.',
+        'Auditoría integral y organización documental de legajos.',
+        'Soporte permanente y asesoramiento estratégico a líderes.',
+        'Mitigación de riesgos legales y laborales en el día a día.'
       ]
     },
     {
       id: 'organization',
       title: 'Organización y Procesos',
-      desc: 'Estandarización estructural: JDs por indicadores, diseño de organigramas y canales de comunicación institucionales fluidos.',
+      desc: 'Descripciones de puesto, organigramas, definición de responsabilidades y procesos internos que acompañan el crecimiento de la organización.',
       icon: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
@@ -76,11 +76,11 @@ const Ecosistema = () => {
         </svg>
       ),
       deliverables: [
-        'Redacción técnica de Descripciones de Puestos (JDs) estructuradas en objetivos e indicadores (KPIs).',
-        'Diseño y proyección de organigramas corporativos escalables y funcionales.',
-        'Definición de matrices de responsabilidades y toma de decisiones (RACI).',
-        'Implementación y ordenamiento normativo de canales de comunicación institucionales internos.',
-        'Estandarización y redacción de políticas clave del personal y manual de convivencia operativa.'
+        'Redacción técnica de Descripciones de Puestos (JDs) por objetivos e indicadores (KPIs).',
+        'Diseño y proyección de organigramas corporativos escalables.',
+        'Definición de responsabilidades y matrices de toma de decisiones (RACI).',
+        'Estandarización y ordenamiento de procesos internos y flujos de trabajo.',
+        'Alineamiento estructural adaptado al ritmo de crecimiento de la empresa.'
       ]
     }
   ];

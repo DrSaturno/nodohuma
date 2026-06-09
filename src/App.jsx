@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from './components/Header';
 import HeroCanvas from './components/HeroCanvas';
 import PillarsDiagram from './components/PillarsDiagram';
+import QuienesSomos from './components/QuienesSomos';
 import Ecosistema from './components/Ecosistema';
 import Metodologia from './components/Metodologia';
 import FAQ from './components/FAQ';
@@ -150,11 +151,11 @@ function App() {
                 Potenciamos la cultura a través del diseño.
               </h2>
               <p className="text-muted" style={{ marginBottom: '20px', fontSize: '1.05rem', lineHeight: '1.7' }}>
-                NODO HUMA profesionaliza la infraestructura humana de empresas en expansión. Combinamos visión corporativa y metodología ágil para transformar la gestión de personas en un activo previsible y eficiente.
+                En NODO HUMA acompañamos a empresas que están creciendo y necesitan profesionalizar la gestión de personas sin perder agilidad. Combinamos experiencia real en People Operations con una metodología clara para aportar estructura, previsibilidad y tiempo a los líderes.
               </p>
               <div style={{ marginTop: '20px', borderLeft: '2px solid #7a8d74', paddingLeft: '20px' }}>
                 <p style={{ fontStyle: 'italic', fontSize: '1.05rem', color: '#1b201c', fontWeight: '500' }}>
-                  "Aportamos estructura sin burocracia. Operamos como un área de RRHH externa: estratégica, flexible y alineada al ritmo de tu negocio."
+                  "Somos tu área de RRHH sin los costos de una estructura interna completa. Trabajamos de manera flexible, adaptándonos a la etapa de cada organización y ayudando a transformar la gestión de personas en un soporte real para el negocio."
                 </p>
               </div>
             </div>
@@ -164,7 +165,7 @@ function App() {
               <PillarsDiagram activePillar={activePillar} setActivePillar={setActivePillar} />
             </div>
 
-            {/* Pillars Details Box (Moved here to allow CSS grid ordering on mobile) */}
+            {/* Pillars Details Box */}
             <div className="pillar-detail-box animate-fade-in" key={activePillar}>
               <span className="section-tag" style={{ marginBottom: '5px', fontSize: '0.8rem' }}>Pilar Seleccionado</span>
               <h4 style={{ textTransform: 'uppercase', letterSpacing: '0.05em' }}>{pillars[activePillar].title}</h4>
@@ -174,6 +175,20 @@ function App() {
               <p>{pillars[activePillar].desc}</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Quiénes Somos Section */}
+      <section id="quienes-somos" className="section-light" style={{ borderTop: '1px solid rgba(27,32,28,0.05)', backgroundColor: '#f9f8f6' }}>
+        <div className="container">
+          <span className="section-tag">Quiénes Somos</span>
+          <h2 className="title-medium">
+            La persona detrás del proceso.
+          </h2>
+          <p className="text-muted" style={{ maxWidth: '700px', marginBottom: '30px' }}>
+            Uniendo visión estratégica y soporte humano para estructurar el crecimiento de tu organización.
+          </p>
+          <QuienesSomos />
         </div>
       </section>
 
@@ -192,17 +207,17 @@ function App() {
             <div className="problema-card">
               <div className="card-num">01</div>
               <h3>Tiempo directivo perdido</h3>
-              <p>Los socios y directores pierden valiosas horas operativas del día resolviendo dudas cotidianas de RRHH o apagando incendios administrativos en lugar de liderar la estrategia y escalar el negocio.</p>
+              <p>Cuando no hay quien tome las riendas de RRHH, son los líderes quienes terminan respondiendo consultas, apagando fuegos y perdiendo foco en lo que importa.</p>
             </div>
             <div className="problema-card">
               <div className="card-num">02</div>
               <h3>Ingresos sin proceso</h3>
-              <p>Cada incorporación se convierte en una improvisación por falta de inducción técnica estructurada. El talento tarda meses en alcanzar la productividad o, peor aún, se desvincula antes de los 90 días.</p>
+              <p>Cada incorporación nueva se resuelve sobre la marcha. Sin un proceso claro, las personas tardan más en arrancar – y algunas se van antes de los 90 días.</p>
             </div>
             <div className="problema-card">
               <div className="card-num">03</div>
               <h3>Roles sin definición</h3>
-              <p>Las responsabilidades se asumen informalmente pero no se definen con indicadores claros. El equipo crece sobre bases inestables, provocando superposiciones, malentendidos y desalineación operativa.</p>
+              <p>Cuando los roles no están bien definidos, cada uno asume lo que puede. El equipo crece, pero sin una base sólida que lo sostenga.</p>
             </div>
           </div>
         </div>
@@ -279,7 +294,7 @@ function App() {
                 </svg>
               </div>
               <h3>Foco</h3>
-              <p>Tiempo estratégico devuelto</p>
+              <p>Más tiempo para liderar y enfocarse en el negocio</p>
             </div>
             <div className="impact-card">
               <div className="impact-icon" style={{ color: '#7a8d74', marginBottom: '18px', display: 'flex', justifyContent: 'center' }}>
@@ -288,7 +303,7 @@ function App() {
                 </svg>
               </div>
               <h3>Solidez</h3>
-              <p>Estructura lista para escalar</p>
+              <p>Procesos claros para acompañar el crecimiento</p>
             </div>
             <div className="impact-card">
               <div className="impact-icon" style={{ color: '#7a8d74', marginBottom: '18px', display: 'flex', justifyContent: 'center' }}>
@@ -301,7 +316,7 @@ function App() {
                 </svg>
               </div>
               <h3>Alineación</h3>
-              <p>Cultura y procesos en sintonía</p>
+              <p>Equipos, roles y cultura trabajando en la misma dirección</p>
             </div>
             <div className="impact-card">
               <div className="impact-icon" style={{ color: '#7a8d74', marginBottom: '18px', display: 'flex', justifyContent: 'center' }}>
@@ -311,7 +326,7 @@ function App() {
                 </svg>
               </div>
               <h3>Previsibilidad</h3>
-              <p>Gestión humana sin sorpresas</p>
+              <p>Gestión de personas concreta, más confiable y menos improvisada</p>
             </div>
           </div>
         </div>
