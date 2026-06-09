@@ -1122,6 +1122,11 @@ h1, h2, h3, h4 {
   transition: var(--transition-fast);
 }
 
+select.form-control option {
+  background-color: #1b201c;
+  color: #fcfbf9;
+}
+
 .form-control:focus {
   border-color: var(--color-sage);
 }
