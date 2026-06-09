@@ -1417,120 +1417,34 @@ textarea.form-control {
   text-align: justify;
 }
 
-.trajectory-accordion {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.trajectory-item {
-  background-color: var(--color-off-white);
-  border: 1px solid rgba(27, 32, 28, 0.05);
-  border-radius: 4px;
-  overflow: hidden;
-  transition: var(--transition-smooth);
-  box-shadow: 0 5px 15px rgba(27,32,28,0.01);
-}
-
-.trajectory-item.open {
-  border-color: rgba(122, 141, 116, 0.3);
-  box-shadow: 0 10px 25px rgba(122,141,116,0.05);
-}
-
-.trajectory-header {
-  width: 100%;
-  background: none;
-  border: none;
-  padding: 20px 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  text-align: left;
-  transition: var(--transition-fast);
-}
-
-.trajectory-header-left {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-}
-
-.trajectory-header-right {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.company-title {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--color-charcoal);
-}
-
-.company-period {
-  font-size: 0.85rem;
-  color: var(--color-off-white);
-  background-color: var(--color-sage);
-  padding: 3px 10px;
-  border-radius: 20px;
-  font-weight: 600;
-  font-family: var(--font-title);
-}
-
-.job-title {
-  font-size: 0.95rem;
-  color: rgba(27, 32, 28, 0.7);
-  font-weight: 500;
-}
-
-.trajectory-icon-wrapper {
+.strengths-title {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
   color: var(--color-sage);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: var(--transition-smooth);
+  margin: 30px 0 15px;
+  font-family: var(--font-title);
+  font-weight: 600;
+  border-bottom: 1px solid rgba(122, 141, 116, 0.15);
+  padding-bottom: 8px;
 }
 
-.trajectory-icon-wrapper svg {
-  width: 18px;
-  height: 18px;
-  stroke-width: 2.5;
-  transition: var(--transition-smooth);
-}
-
-.trajectory-item.open .trajectory-icon-wrapper {
-  transform: rotate(45deg);
-}
-
-.trajectory-body {
-  max-height: 0;
-  overflow: hidden;
-  transition: var(--transition-smooth);
-}
-
-.trajectory-content {
-  padding: 0 25px 25px;
-  border-top: 1px solid rgba(27, 32, 28, 0.02);
-}
-
-.trajectory-bullets {
+.strengths-list {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  margin-top: 15px;
+  gap: 15px;
 }
 
-.trajectory-bullets li {
+.strengths-list li {
   position: relative;
   padding-left: 20px;
-  font-size: 0.95rem;
+  font-size: 0.98rem;
   color: rgba(27, 32, 28, 0.85);
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
-.trajectory-bullets li::before {
+.strengths-list li::before {
   content: '';
   position: absolute;
   left: 0;
@@ -1539,6 +1453,11 @@ textarea.form-control {
   height: 6px;
   border-radius: 50%;
   background-color: var(--color-sage);
+}
+
+.strengths-list li strong {
+  color: var(--color-charcoal);
+  font-weight: 600;
 }
 
 @media (max-width: 992px) {
