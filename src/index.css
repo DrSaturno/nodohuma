@@ -1110,6 +1110,7 @@ h1, h2, h3, h4 {
 }
 
 .form-control {
+  width: 100%;
   background: transparent;
   border: none;
   border-bottom: 1px solid rgba(252, 251, 249, 0.2);
