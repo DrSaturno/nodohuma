@@ -144,7 +144,7 @@ function App() {
       <section id="esencia" className="section-light">
         <div className="container">
           <div className="esencia-grid">
-            <div className="esencia-left">
+            <div className="esencia-intro">
               <span className="section-tag">Nuestra Esencia</span>
               <h2 className="title-medium">
                 Potenciamos la cultura a través del diseño.
@@ -152,26 +152,26 @@ function App() {
               <p className="text-muted" style={{ marginBottom: '20px', fontSize: '1.05rem', lineHeight: '1.7' }}>
                 NODO HUMA profesionaliza la infraestructura humana de empresas en expansión. Combinamos visión corporativa y metodología ágil para transformar la gestión de personas en un activo previsible y eficiente.
               </p>
-              <div style={{ marginTop: '20px', borderLeft: '2px solid #7a8d74', paddingLeft: '20px', marginBottom: '30px' }}>
+              <div style={{ marginTop: '20px', borderLeft: '2px solid #7a8d74', paddingLeft: '20px' }}>
                 <p style={{ fontStyle: 'italic', fontSize: '1.05rem', color: '#1b201c', fontWeight: '500' }}>
                   "Aportamos estructura sin burocracia. Operamos como un área de RRHH externa: estratégica, flexible y alineada al ritmo de tu negocio."
                 </p>
-              </div>
-
-              {/* Pillars Details Box (Moved here to align heights and avoid empty gaps) */}
-              <div className="pillar-detail-box animate-fade-in" key={activePillar}>
-                <span className="section-tag" style={{ marginBottom: '5px', fontSize: '0.8rem' }}>Pilar Seleccionado</span>
-                <h4 style={{ textTransform: 'uppercase', letterSpacing: '0.05em' }}>{pillars[activePillar].title}</h4>
-                <p style={{ fontWeight: '500', color: '#7a8d74', marginBottom: '8px', fontSize: '0.9rem' }}>
-                  {pillars[activePillar].tagline}
-                </p>
-                <p>{pillars[activePillar].desc}</p>
               </div>
             </div>
             
             <div className="esencia-right">
               {/* Interactive Triangle Pillars Diagram */}
               <PillarsDiagram activePillar={activePillar} setActivePillar={setActivePillar} />
+            </div>
+
+            {/* Pillars Details Box (Moved here to allow CSS grid ordering on mobile) */}
+            <div className="pillar-detail-box animate-fade-in" key={activePillar}>
+              <span className="section-tag" style={{ marginBottom: '5px', fontSize: '0.8rem' }}>Pilar Seleccionado</span>
+              <h4 style={{ textTransform: 'uppercase', letterSpacing: '0.05em' }}>{pillars[activePillar].title}</h4>
+              <p style={{ fontWeight: '500', color: '#7a8d74', marginBottom: '8px', fontSize: '0.9rem' }}>
+                {pillars[activePillar].tagline}
+              </p>
+              <p>{pillars[activePillar].desc}</p>
             </div>
           </div>
         </div>
