@@ -350,7 +350,15 @@ function App() {
           <p>Donde el talento y la organización se encuentran.</p>
         </div>
         <div className="footer-right">
-          <span>LinkedIn (Próximamente)</span>
+          <div className="footer-socials">
+            <a href="https://www.linkedin.com/company/nodo-huma/" target="_blank" rel="noopener noreferrer" className="footer-link">
+              LinkedIn
+            </a>
+            <span style={{ opacity: 0.3 }}>|</span>
+            <a href="https://www.instagram.com/nodohuma/" target="_blank" rel="noopener noreferrer" className="footer-link">
+              Instagram
+            </a>
+          </div>
           <span>© {new Date().getFullYear()} NODO HUMA. Todos los derechos reservados.</span>
         </div>
       </footer>
